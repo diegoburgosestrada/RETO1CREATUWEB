@@ -1,145 +1,48 @@
-:root{
-    /*margenes*/
-    --margen:10rem;
-    --padding:10rem;
-
-    /*Tamaño fuente*/
-    --parrafo:1.8em;
-    --tituloPrincipal:2.2rem;
-    --tituloSecundario:2rem;
-}
-*{
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-main, header, nav, section, article, aside, footer{
-    display: block;
-}
-
-html{
-
-  font-family: "Playwrite DE Grund", cursive;
-  font-optical-sizing: auto;
-
-}
-
-main{
-    min-width: 320px;
-    width: 100%;
-    padding: var(--padding);
-    margin: var(--margin);
+    padding: 20px;
 }
 
 header{
-    height: 15rem;
-    width: 90%;
-    margin-top: 0.5rem;
-    border-radius: 2rem;
-    background-image: url(../img/logo1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #007bff;
+    color: whitesmoke;
+    padding: 20px;
 }
 
-header h1{
-    width: 65%;
-    height: 10rem;
-    margin: 1rem;
-    padding: 1rem;
-    font-size: var(--tituloPrincipal);
-    text-align: left;
-
+#productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap:20px;
+    padding:20px;
 
 }
 
-nav{
-    height: auto;
-    width: 90%;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 2rem;
-}
-
-nav li{
-    list-style: none;
-}
-
-nav li a{
-    padding: 0.9rem;
-    margin-left: 1rem;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.7rem;
-}
-
-nav li a:hover{
-    border-radius: 2rem;
-}
-
-section{
-    width: 90%;
-    padding: 1rem;
-    margin-top: 1rem;
-    overflow: hidden;
-    height: auto;
-    border-radius: 2rem;
-}
-
-article{
-    width: 90%;
-    margin: 1rem;
-    padding: 1rem;
-    overflow: hidden;
-    height: auto;
-    border-radius: 2rem;
-}
-
-article p{
-    margin: 1rem;
-    padding: 1rem;
-    font-size: var(--parrafo);
-}
-
-article h2{
-    font-size: var(--tituloSecundario);
-}
-
-aside{
-    width: 90%;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 2rem;
-}
-
-aside h3{
-    font-size: var(--parrafo);
-}
-
-aside p{
-    font-size: 1.5rem;
-}
-
-aside a{
-    font-size: 1.5rem;
-    text-decoration: none;
-    margin-bottom: 1.5rem;
-}
-
-footer{
-    width: 90%;
-    padding: 1rem;
-    margin: 1rem;
-    height: 5rem;
-    border-radius: 2rem;
+.producto{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
 }
 
-footer address{
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    text-align: left;
+.producto img{
+    max-width: 90%;
+    height: 250px;
 }
 
+.producto h3{
+    color: #333;
+
+}
+
+.producto p{
+    color: #666;
+
+}
+
+.producto:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
