@@ -3,28 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Vida mia 🥰</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
     <header>
-        <h1>Tienda Virtual</h1>
-        <p>gghhfhh</p>
+        <h1>FAN #1 DE ESTA LINDA HISTORIA 💖</h1>
+        <p>Es increíble la forma en la que esto empezó, cuando menos lo pensé que las conversaciones duraban horas,<br> las palabras bonitas empezaron a existir, nos emocionamos por hablar. <br>Puedo asegurar que nada hará que olvide la forma tan linda en la que coincidimos. 💖</p>
 
     </header>
     <main>
         <section id="productos">
             <div class="producto">
-                <img src="img/diego.jpg" alt="Mi novia">
-                <h3>XD</h3>
-                <p>XDDDDD </p>
+                <img src="img/caro.jpg" alt="Mi novia">
+                <h3>Caro 🥰</h3>
+                <p>Amo cuando estamos riendo y me doy cuenta lo feliz que soy con tigo 💖</p>
+            </div>
+                <div class="producto">
+                <img src="img/diegoo11.jpg" alt="Yo">
+                <h3>Soy yo 🙃</h3>
+                <p>No se que escribir jajaja, solo diré que me seguiré enamorando de ti todos los días.🥰</p>
             </div>
             <div class="producto">
-                <img src="img/diego.jpg" alt="Yo">
-                <h3>DX</h3>
-                <p>SDSF</p>
-            </div>     
-        </section>
+                <img src="img/caroo1.jpg" alt="Yo">
+                <h3>Vida ❤️‍🩹</h3>
+                <p>Escucho tu voz y veo tus fotos millones de veces y millones de veces me encantas 💖</p>
+            </div>
+            <div class="producto">
+                <img src="img/480254814_3587018034935901_5420744696179291049_n.jpg" alt="Yo">
+                <h3>Yo</h3>
+                <p>Solo quiero ser esa personita que te llene de amor y de la cual no te arrepientas de haber conocido 🥰.</p>
+            </div> 
+           
+        </section>    
+        <section id="productos">
+            <div class="producto">
+                <audio src="VID/Audio de WhatsApp 2025-03-03 a las 09.00.06_a98b9219.mp3" controls autoplay loop></audio>
+                <h3>Caro 🥰</h3>
+                <p>Te encontré sin buscarte y hoy te estas convirtiendo en lo que mas quiero en esta vida 🥰</p>
+                <br>
+                <br>
+            </div>
+                 
+        </section>    
     </main>
+    
 </body>
+
+<script>
+    function createFlower() {
+        const flower = document.createElement("div");
+        flower.classList.add("flower");
+        document.body.appendChild(flower);
+
+        const startX = Math.random() * window.innerWidth;
+        flower.style.left = `${startX}px`;
+        flower.style.top = `0px`;
+
+        const animationDuration = Math.random() * 3 + 2;
+        flower.style.transition = `transform ${animationDuration}s linear, opacity ${animationDuration}s ease-out`;
+
+        setTimeout(() => {
+            flower.style.transform = `translateY(${window.innerHeight}px) rotate(${Math.random() * 360}deg)`;
+            flower.style.opacity = "0";
+        }, 100);
+
+        setTimeout(() => {
+            flower.remove();
+        }, animationDuration * 1000);
+    }
+
+    setInterval(createFlower, 300);
+</script>
 </html>

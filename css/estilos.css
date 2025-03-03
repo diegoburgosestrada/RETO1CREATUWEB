@@ -4,10 +4,20 @@ body{
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
+    overflow: hidden;
+}
+
+.flower {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/2917/2917999.png');
+    background-size: cover;
+    opacity: 0.8;
 }
 
 header{
-    background-color: #007bff;
+    background-color: #f80e0eb9;
     color: whitesmoke;
     padding: 20px;
 }
