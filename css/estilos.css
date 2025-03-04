@@ -4,13 +4,6 @@
     box-sizing: border-box;
   }
 
-body{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    overflow: hidden;
-}
 
 .flower {
     position: absolute;
@@ -19,6 +12,15 @@ body{
     background-image: url('https://cdn-icons-png.flaticon.com/128/2917/2917999.png');
     background-size: cover;
     opacity: 0.8;
+}
+
+
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #f4f4f4;
+    overflow: hidden;
 }
 
 header{
